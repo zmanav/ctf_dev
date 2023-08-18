@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Load Content</title>
+</head>
+<body>
+    <div id="content"></div>
+
+    <script>
+        // Fetch content from the GitHub Pages site
+        fetch('https://google.com')
+            .then(response => response.text())
+            .then(html => {
+                // Insert the fetched content into the 'content' div
+                document.getElementById('content').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error fetching content:', error);
+            });
+    </script>
+</body>
+</html>
