@@ -2,10 +2,6 @@
 <html>
 <head>
     <title>Load Content</title>
-</head>
-<body>
-    <div id="content"></div>
-
     <script>
         // Fetch content from the GitHub Pages site
         fetch('http://51.15.92.102:8080/flag.txt')
@@ -19,5 +15,8 @@
                 console.error('Error fetching content:', error);
             });
     </script>
+</head>
+<body>
+    <div id="content"></div>
 </body>
 </html>
